@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DailyUI #001 - Sign Up</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:700">
+	<link rel="stylesheet" href="001.css">
+</head>
+<body>
+	<section class='box'>
+	  	<div class='box-form'>
+	    	<div class='box-login-tab'></div>
+	    	<div class='box-login-title'>
+	      		<div class='i i-login'></div>
+	      		<h2>LOGIN</h2>
+	   		</div>
+	    	<div class='box-login'>
+	    		<form id='login_form'>
+	    			<a onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></a>
+	        		<fieldset>
+	          			<label for='user'>USERNAME</label>
+	          			<input type='text' id='user' name='user' title='Username' />
+	          			<span class='i i-warning'></span>
+	        		</fieldset>
+	      	  		<fieldset>
+	          			<label for='pass'>PASSWORD</label>
+	          			<input type='password' id='pass' name='pass' title='Password' />
+	          			<span class='i i-warning'></span>
+	        		</fieldset>
+
+	          		<label class='checkbox'>
+	            		<input type='checkbox' value='TRUE' title='Keep me Signed in' /> Keep me Signed in
+	          		</label>
+
+	        		<input type='submit' id='do_login' value='GET STARTED' title='Get Started' />
+	      		</form>
+	    	</div>
+	  	</div>
+	  	<div class='box-info'>
+			<p>
+				<button onclick="closeLoginInfo();" class='b b-info i i-close' title='Back to Sign In'></button>
+				<h3>Need Help?</h3>
+	    	</p>
+			<div class='line-wh'></div>
+	    	<button onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</button>
+	    	<button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
+	    	<div class='line-wh'></div>
+	    	<button onclick="" class='b-cta' title='Sign up now!'> CREATE ACCOUNT</button>
+	  	</div>
+	</section>
+
+
+	 <footer class='icon-credits'>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/budi-tanrim" title="Budi Tanrim">Budi Tanrim</a> & <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></footer>
+	  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="001.js"></script>
+</body>
+</html>
