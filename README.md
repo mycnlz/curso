@@ -7,3 +7,6 @@ Code snippets of my DailyUI challenge
 
 **[#002 - Credit Card Checkout](https://github.com/mycnlz/dailyUI/tree/master/002)**   
 ![#002 - Credit Card Checkout](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_002.png)  
+
+**[#003 - Landing Page](https://github.com/mycnlz/dailyUI/tree/master/003)**   
+![#003 - Landing Page](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_003.png)  
