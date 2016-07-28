@@ -1,0 +1,220 @@
+/*--------------------
+General Style
+---------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'PT Mono';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #2b90d9;
+  
+}
+
+.strip {
+  height: 100%;
+  width: 45%;
+  position: absolute;
+  left: 25%;
+  background-color: #2586cc;
+  transform: skewX(-35deg);
+  z-index: -1;
+  box-shadow: 30px 0px 90px rgba(40,44,55,0.2);
+}
+
+.subject {
+  font-family: 'Playfair Display', serif;
+  color: rgba(255,255,255,0.025);
+  font-size: 180px;
+  font-size: 16vw;
+  letter-spacing: -4px;
+  line-height: 0.9;
+  z-index: -1;
+}
+
+/*--------------------
+Calculator
+---------------------*/
+
+.calc {
+  width: 570px;
+  padding: 20px 25px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  background-color: #d9e1e8;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 30px 48px rgba(40,44,55,0.4);
+}
+
+.screen {
+  width: 382px;
+  height: 80px;
+  position: relative;
+  top: -60px;
+  left: -40px;
+  padding: 18px;
+  background-color: #fff;
+  color: #282c37;
+  font-size: 48px;
+  text-align: right;
+  z-index: 2;
+  box-shadow: 0px 15px 24px rgba(40,44,55,0.4);
+}
+
+.keyboard {
+  width: 353px;
+  position: relative;
+  margin-top: -40px;
+}
+
+.keyboard:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.numbers {
+  width: 210px;
+  padding-left: 10px;
+  float: left;
+}
+
+.operators {
+  width: 140px;
+  padding-right: 10px;
+  float: right;
+}
+
+button:focus { 
+  outline: 0;
+}
+
+.numbers button, .operators button {
+  height: 55px;
+  width: 55px;
+  margin: 2px -3px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.numbers button {
+  color: #9baec8;
+  border: 1px solid #9baec8;
+  background-color: transparent;
+}
+
+.numbers button:hover {
+  color: #5c7ba5;
+  border: 1px solid #5c7ba5;
+  box-shadow: 0px 2px 6px rgba(40,44,55,0.3);
+}
+
+.operators button {
+  color: #fff;
+  border: 1px solid #5c7ba5;
+  background-color: #5c7ba5;
+}
+
+.operators button:hover {
+  color: #2b90d9;
+  border: 1px solid #282c37;
+  background-color: #282c37;
+  box-shadow: 0px 2px 6px rgba(40,44,55,0.3);
+}
+
+.operators button[data-v='+'],
+.operators button[data-v='='] {
+  height: 114px;
+}
+
+
+.history {
+  width: 190px;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #9baec8;
+  z-index: -1;
+}
+
+span.i {
+  font-size: 24px;
+  color: #5c7ba5;
+}
+
+ul.memo {
+  width: 100%;
+  list-style: none;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+ul.memo > li {
+  height: 22px;
+  padding: 0px;
+  margin: 0px 0px 2px -40px;
+  color: #5c7ba5;
+  overflow: hidden;
+}
+
+ul.memo > li button {
+  height: 20px;
+  padding: 0px 4px;
+  border: none;
+  background-color: #5c7ba5;
+  color: #d9e1e8;
+  border-radius: 13px;
+}
+
+ul.memo > li button:hover {
+  color: #2b90d9;
+  border: none;
+  background-color: #282c37;
+  cursor: pointer;
+}
+
+ul.memo > li span {
+  height: 20px;
+  font-size: 18px;
+  padding: 6px 3px 0px 3px;
+  color: #5c7ba5;
+}
+
+
+/*--------------------
+Transitions
+---------------------*/
+
+ul.memo,
+ul.memo > li,
+ul.memo > li button {
+    
+  -webkit-transition: all 0.6s;
+     -moz-transition: all 0.6s;
+      -ms-transition: all 0.6s;
+       -o-transition: all 0.6s;
+          transition: all 0.6s;
+}
+
+.screen,
+.numbers button, .operators button {
+  
+  -webkit-transition: all 0.3s;
+     -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Maycon Luiz">
+	<title>DailyUI #004 - Calculator</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Mono|Open+Sans">
+	<link rel="stylesheet" href="004.css">
+</head>
+<body>
+
+	<div class='strip'></div>
+	<div class='calc'>
+		<div class='screen'></div>
+		<div class='keyboard'>
+		    <div class='numbers'>
+		      <button data-v='9'>9</button>
+		      <button data-v='8'>8</button>
+		      <button data-v='7'>7</button>
+		      <button data-v='6'>6</button>
+		      <button data-v='5'>5</button>
+		      <button data-v='4'>4</button>
+		      <button data-v='3'>3</button>
+		      <button data-v='2'>2</button>
+		      <button data-v='1'>1</button>
+		      <button data-v='0'>0</button>
+		      <button data-v='.'>.</button>
+		      <button data-v='C'>C</button>
+		    </div>
+		    <div class='operators'>
+		      <button data-v='%'>%</button>
+		      <button data-v='x'>×</button>
+		      <button data-v='÷'>÷</button>
+		      <button data-v='-'>-</button>
+		      <button data-v='+'>+</button>
+		      <button data-v='='>=</button>
+		    </div>
+		</div>
+		<div class='history'>
+		    <span class='i ion-ios-timer-outline'></span>
+		    <ul class='memo'></ul>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="004.js"></script>
+
+</body>
+</html>
