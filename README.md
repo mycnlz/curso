@@ -13,3 +13,6 @@ Code snippets of my DailyUI challenge
 
 **[#004 - Calculator](https://github.com/mycnlz/dailyUI/tree/master/004)**   
 ![#004 - Calculator](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_004.png)    
+
+**[#005 - App Icon](https://github.com/mycnlz/dailyUI/tree/master/005)**   
+![#005 - App Icon](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_005.png)    
