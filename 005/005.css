@@ -1,0 +1,106 @@
+/*--------------------
+General Style
+---------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at center top, #8283a7 0%, #54546c 75%);
+  background-image: radial-gradient(ellipse farthest-corner at center top, #8283a7 0%, #54546c 75%);
+}
+
+.subject {
+  font-family: 'Playfair Display', serif;
+  color: rgba(255,255,255,0.016);
+  font-size: 180px;
+  font-size: 16vw;
+  letter-spacing: -4px;
+  line-height: 0.9;
+  z-index: -1;
+}
+
+/*--------------------
+Icon
+---------------------*/
+
+.icon {
+  width: 256px;
+  height: 256px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icon-container {
+  width: 256px;
+  height: 256px;
+  overflow: hidden;
+  
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at center bottom, #55967e 0%, #4e8973 55%);
+  background-image: radial-gradient(ellipse farthest-corner at center bottom, #55967e 0%, #4e8973 55%);
+  
+  -webkit-border-radius: 52px;
+     -moz-border-radius: 52px;
+          border-radius: 52px;
+    
+  -webkit-box-shadow: 30px 30px 48px rgba(64, 65, 70, 0.6);
+     -moz-box-shadow: 30px 30px 48px rgba(64, 65, 70, 0.6);
+          box-shadow: 30px 30px 48px rgba(64, 65, 70, 0.6);
+  
+  -webkit-animation: rubberBand 0.8s ease;
+     -moz-animation: rubberBand 0.8s ease;
+       -o-animation: rubberBand 0.8s ease;
+          animation: rubberBand 0.8s ease;
+}
+
+.icon-face {
+  width: 256px;
+  height: 224px;
+  text-align: center;
+  background: #5ca389;
+  
+  background-image: -webkit-radial-gradient(ellipse farthest-corner at center bottom, #5ca389 0%, #69aa92 75%);
+  background-image: radial-gradient(ellipse farthest-corner at center bottom, #5ca389 0%, #69aa92 75%);
+  
+  -webkit-border-radius: 52px;
+     -moz-border-radius: 52px;
+          border-radius: 52px;
+}
+
+.i {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  font-size: 148px;
+  color: #99f19e;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ib {
+  position: absolute;
+  top: 42%;
+  left: 47%;
+  font-size: 148px;
+  color: #404146;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
