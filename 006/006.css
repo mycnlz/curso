@@ -1,0 +1,270 @@
+/*--------------------
+General Style
+---------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+}
+
+body {
+  background: #dddfe6;
+  
+}
+
+/*--------------------
+User Profile
+---------------------*/
+
+.container {
+  height: 400px;
+  width: 580px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.user {
+  height: 350px;
+  width: 250px;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+  background: rgba(38,57,89,1);
+  background: -moz-linear-gradient(top, rgba(38,57,89,1) 0%, rgba(10,17,28,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(38,57,89,1)), color-stop(100%, rgba(10,17,28,1)));
+  background: -webkit-linear-gradient(top, rgba(38,57,89,1) 0%, rgba(10,17,28,1) 100%);
+  background: -o-linear-gradient(top, rgba(38,57,89,1) 0%, rgba(10,17,28,1) 100%);
+  background: -ms-linear-gradient(top, rgba(38,57,89,1) 0%, rgba(10,17,28,1) 100%);
+  background: linear-gradient(to bottom, rgba(38,57,89,1) 0%, rgba(10,17,28,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263959', endColorstr='#0a111c', GradientType=0 );
+  transform: skewX(15deg);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: -30px 0px 60px rgba(37,44,65,0.4);
+}
+
+.user:hover {
+  box-shadow: -15px 0px 30px rgba(37,44,65,0.4);
+}
+
+.user > img {
+  height: 110%;
+  margin: -3% -19.5%;
+  transform: skewX(-15deg);
+  mix-blend-mode: screen;
+}
+
+.shaddow {
+  height: 350px;
+  width: 250px;
+  border-radius: 6px;
+  position: absolute;
+  right: 0px;
+  opacity: 0.1;
+  transform: skewX(15deg);
+  overflow: hidden;
+  z-index: 2;
+  
+  background: rgba(0,0,0,0.25);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.85) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.25)), color-stop(100%, rgba(0,0,0,0.85)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.85) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.85) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.85) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+  
+  -webkit-animation: anim_shaddow 2s ease;
+     -moz-animation: anim_shaddow 2s ease;
+       -o-animation: anim_shaddow 2s ease;
+          animation: anim_shaddow 2s ease;
+}
+
+.shaddow:hover {
+  opacity: 1;
+}
+
+.shaddow button {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 40%;
+  bottom: -56px;
+  transform: skewX(-15deg);
+  border: none;
+  background-color: #ee2560;
+  font-size: 28px;
+  line-height: 50px;
+  color: #fff;
+  z-index: 2;
+  border-radius: 25px;
+  box-shadow: 0px 8px 24px rgba(238,37,96,0.85);
+  
+  -webkit-animation: anim_button 2s ease;
+     -moz-animation: anim_button 2s ease;
+       -o-animation: anim_button 2s ease;
+          animation: anim_button 2s ease;
+}
+
+.shaddow button:hover {
+  color: #ee2560;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.85);
+}
+
+.shaddow:hover button {
+  bottom: 16px;
+}
+
+.profile {
+  height: 340px;
+  width: 500px;
+  border-radius: 6px;
+  padding: 30px 180px 30px 30px;
+  margin-top: 50px;
+  background-color: #fff;
+  z-index: 0;
+  box-shadow: -30px 0px 60px rgba(37,44,65,0.3);
+}
+
+h1 {
+  font-family: 'Passion One', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  color: #52616a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a.alias, a.location {
+  height: 28px;
+  width: 110%;
+  position: relative;
+  float: left;
+  font-size: 13px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: left;
+}
+
+a.alias {
+  background-color: #ee2560;
+  color: #fff;
+  left: -12px;
+  padding-left: 12px;
+  border-radius: 16px;
+}
+
+a.alias > span {
+  font-size: 26px;
+  float: left;
+}
+
+a.location {
+  color: #ee2560;
+}
+
+a.location > span {
+  font-size: 16px;
+  line-height: 26px;
+  float: left;
+}
+
+.stats {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.qtty {
+  width: 32%;
+  display: inline-block;
+  color: #dddfe6;
+  line-height: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.qtty h4 {
+  width: 100%;
+  color: #ee2560;
+  line-height: 28px;
+  font-size: 28px;
+  text-transform: none;
+  margin: 0px;
+}
+
+.follow {
+  position: relative;
+  float: left;
+  top: -22px;
+  left: 20px;
+  border: none;
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 1px solid #ee2560;
+  background-color: #ee2560;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  z-index: 2;
+  border-radius: 25px;
+  box-shadow: 0px 8px 24px rgba(238,37,96,0.85);
+}
+
+.follow:hover {
+  color: #ee2560;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.25);
+}
+
+/*--------------------
+Transitions
+---------------------*/
+
+.user, .shaddow, .shaddow button, .follow {
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+/*--------------------
+Animations
+---------------------*/
+
+@keyframes anim_shaddow {
+    0%  { opacity: 0.1; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0.1; }
+}
+
+@keyframes anim_button {
+    0%  { bottom: -56px; }
+    30% { bottom: 16px; }
+    70% { bottom: 16px; }
+    100% { bottom: -56px; }
+}
