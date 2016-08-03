@@ -18,5 +18,7 @@ Code snippets of my DailyUI challenge
 ![#005 - App Icon](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_005.png)    
 
 **[#006 - User Profile](https://github.com/mycnlz/dailyUI/tree/master/006)**   
-![#006 - User Profile](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_006.png)        
+![#006 - User Profile](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_006.png)    
 
+**[#007 - Settings](https://github.com/mycnlz/dailyUI/tree/master/007)**   
+![#007 - Settings](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_007.png)
