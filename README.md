@@ -21,4 +21,8 @@ Code snippets of my DailyUI challenge
 ![#006 - User Profile](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_006.png)    
 
 **[#007 - Settings](https://github.com/mycnlz/dailyUI/tree/master/007)**   
-![#007 - Settings](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_007.png)
+![#007 - Settings](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_007.png)    
+
+**[#008 - 404 Page](https://github.com/mycnlz/dailyUI/tree/master/008)**   
+![#008 - 404 Page](https://github.com/mycnlz/dailyUI/blob/master/global/img/Proj_DailyUI_008.png)
+
